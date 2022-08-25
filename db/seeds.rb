@@ -5,3 +5,11 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+
+require 'faker'
+
+Movie.create(title: Faker::Movie.title, overview: Faker::Quote.famous_last_words, poster_url: Faker::LoremFlickr.image(size: "50x60", search_terms: [Faker::Hobby.activity]), rating: Faker::Number.between(from: 1, to: 10))
+Movie.create(title: Faker::Movie.title, overview: Faker::Quote.famous_last_words, poster_url: Faker::LoremFlickr.image(size: "50x60", search_terms: [Faker::Hobby.activity]), rating: Faker::Number.between(from: 1, to: 10))
+Movie.create(title: Faker::Movie.title, overview: Faker::Quote.famous_last_words, poster_url: Faker::LoremFlickr.image(size: "50x60", search_terms: [Faker::Hobby.activity]), rating: Faker::Number.between(from: 1, to: 10))
+Movie.create(title: Faker::Movie.title, overview: Faker::Quote.famous_last_words, poster_url: Faker::LoremFlickr.image(size: "50x60", search_terms: [Faker::Hobby.activity]), rating: Faker::Number.between(from: 1, to: 10))
+Movie.create(title: Faker::Movie.title, overview: Faker::Quote.famous_last_words, poster_url: Faker::LoremFlickr.image(size: "50x60", search_terms: [Faker::Hobby.activity]), rating: Faker::Number.between(from: 1, to: 10))
