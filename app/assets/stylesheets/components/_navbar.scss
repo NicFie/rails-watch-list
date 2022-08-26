@@ -1,6 +1,18 @@
 .navbar-lewagon {
+  display: flex;
   justify-content: space-between;
+  align-items: center;
   background: white;
+
+  span {
+    font-size: 50px;
+  }
+
+  a {
+    padding-right: 30px;
+    color: black;
+    text-decoration: none;
+  }
 }
 
 .navbar-lewagon .navbar-collapse {
