@@ -1,8 +1,11 @@
+<%= cl_image_tag("qpbbwroj6bixwefx7crm", width: 400, height: 300, crop: :fill) %>
+
 <h1>All lists</h1>
 
 <ul>
 <% @lists.each do |list| %>
   <li><%= link_to list.name, list_path(list) %></li>
+  <li><%= cl_image_tag list.photo.key, height: 150, width: 200, crop: :fill %></li>
 <% end %>
 </ul>
 
